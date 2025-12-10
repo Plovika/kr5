@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Тренажёр слов</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+    <h1>Тренажёр слов</h1>
+
+    <div class="grid">
+        <section class="card">
+            <h2>Проверка случайного слова</h2>
+            <div class="row">
+                <button id="new-word-btn">Показать случайное слово</button>
+                <div id="word-box" class="word-box">—</div>
+            </div>
+            <input id="answer" placeholder="Введите перевод" />
+            <div class="row">
+                <button id="check-btn">Проверить</button>
+                <div id="result" class="result"></div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Добавить слово</h2>
+            <input id="newWord" placeholder="Слово (англ.)" />
+            <input id="newTranslation" placeholder="Перевод" />
+            <button id="add-btn">Добавить</button>
+            <div id="add-result" class="muted"></div>
+        </section>
+
+        <section class="card">
+            <h2>Список слов</h2>
+            <div class="controls">
+                <input id="searchQuery" placeholder="Поиск по слову или переводу" />
+                <button id="searchBtn">Поиск</button>
+                <button id="refreshBtn">Обновить список</button>
+            </div>
+            <ul id="wordsList" class="words-list"></ul>
+        </section>
+
+        <section class="card">
+            <h2>Управление словом по ID</h2>
+            <input id="idInput" placeholder="ID слова" />
+            <input id="updateWord" placeholder="Новое слово (опц.)" />
+            <input id="updateTranslation" placeholder="Новый перевод (опц.)" />
+            <div class="row">
+                <button id="getByIdBtn">Получить по ID</button>
+                <button id="updateBtn">Обновить</button>
+                <button id="deleteBtn">Удалить</button>
+            </div>
+            <pre id="idResult" class="muted"></pre>
+        </section>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
