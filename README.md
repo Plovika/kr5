@@ -4,6 +4,7 @@
 
 ## скрины работоспособности сайта
 <img width="1656" height="947" alt="image" src="https://github.com/user-attachments/assets/a31513c0-eac9-4d22-8edd-ed1caccf4a9b" />
+
 ## функционал
 
  1. Показать случайное английское слово
